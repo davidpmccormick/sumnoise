@@ -31,30 +31,23 @@ xmlns:georss="http://www.georss.org/georss">
 			<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 600px)" href="{$workspace}/css/handheld.css" /> <!-- CSS for phones -->
 			<link type="text/css" rel="stylesheet" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="{$workspace}/css/tablet.css" /> <!-- CSS for iPads -->
 			<link type="text/css" rel="stylesheet" media="(min-device-width: 601px) and (max-device-width: 1080px)" href="{$workspace}/css/tablet.css" /> <!-- CSS for tablets -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-			<script src="{$workspace}/js/jquery.isotope.min.js"></script>
-			<script src="{$workspace}/js/jquery.ajaxify.min.js"></script>
-			<script id="thejavascript" src="{$workspace}/js/sumnoise.js"></script>
-			<script src="{$workspace}/js/jquery.lionbars.js"></script>
-			<script type="text/javascript" src="{$workspace}/js/rotate.min.js"></script>
-			<script type="text/javascript" src="{$workspace}/js/jquery.jtweetsanywhere-1.3.1.js"></script>
 			
-			
-			
-			<xsl:comment><![CDATA[[if (gte IE 6)&(lte IE 8)]><script type="text/javascript" src="]]><xsl:value-of select="$root"/><![CDATA[/workspace/js/selectivizr-min.js"></script><![endif]]]></xsl:comment>
-					
-			<xsl:comment><![CDATA[[if (gte IE 6)&(lte IE 8)]><script type="text/javascript" src="]]><xsl:value-of select="$root"/><![CDATA[/workspace/js/sumnoise_ie.js"></script><![endif]]]></xsl:comment>
-					
-			<xsl:comment><![CDATA[[if (gte IE 6)&(lte IE 8)]><script type="text/javascript" src="]]><xsl:value-of select="$root"/><![CDATA[/workspace/js/about_ie.js"></script><![endif]]]></xsl:comment>
-								
-	        <xsl:if test="$current-page-id = '2'"> <!-- only for 'about' page -->
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+			<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+			<script src="{$workspace}/js/master-ck.js"></script>
+													
+	    <xsl:if test="$current-page-id = '2'"> <!-- only for 'about' page -->
 				<script src="{$workspace}/js/about.js"></script>
+				<xsl:comment><![CDATA[[if (gte IE 6)&(lte IE 8)]><script type="text/javascript" src="]]><xsl:value-of select="$root"/><![CDATA[/workspace/js/about_ie.js"></script><![endif]]]></xsl:comment>
 			</xsl:if>
-			<script src="{$workspace}/js/jquery.history.js"></script>
-			<script src="{$workspace}/js/jquery.cycle.min.js"></script>
-			<script src="{$workspace}/js/jquery.animate-shadow-min.js"></script>
-			<script src="{$workspace}/js/jquery.sticky.js"></script>
-			<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+			
+			<script id="thejavascript" src="{$workspace}/js/sumnoise.js"></script>
+			
+			<!-- IE -->			
+			<xsl:comment><![CDATA[[if (gte IE 6)&(lte IE 8)]><script type="text/javascript" src="]]><xsl:value-of select="$root"/><![CDATA[/workspace/js/selectivizr-min.js"></script><![endif]]]></xsl:comment>
+			<xsl:comment><![CDATA[[if (gte IE 6)&(lte IE 8)]><script type="text/javascript" src="]]><xsl:value-of select="$root"/><![CDATA[/workspace/js/sumnoise_ie.js"></script><![endif]]]></xsl:comment>
+			<!-- end IE -->
+			
 			<script type="text/javascript" src="http://use.typekit.com/oty5wmg.js"></script>
 			<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 			<style type="text/css">
@@ -212,14 +205,7 @@ xmlns:georss="http://www.georss.org/georss">
 				</script>
 			</xsl:if>
 			<xsl:if test="$current-page-id = '14'"> <!-- syntax highlighting on blog:view pages -->
-				<script type="text/javascript" src="{$workspace}/js/shCore.js"></script>
-				<script type="text/javascript" src="{$workspace}/js/brushes/shBrushAppleScript.js"></script>
-				<script type="text/javascript" src="{$workspace}/js/brushes/shBrushBash.js"></script>
-				<script type="text/javascript" src="{$workspace}/js/brushes/shBrushCss.js"></script>
-				<script type="text/javascript" src="{$workspace}/js/brushes/shBrushJScript.js"></script>
-				<script type="text/javascript" src="{$workspace}/js/brushes/shBrushPhp.js"></script>
-				<script type="text/javascript" src="{$workspace}/js/brushes/shBrushSql.js"></script>
-				<script type="text/javascript" src="{$workspace}/js/brushes/shBrushXml.js"></script>
+				<script type="text/javascript" src="{$workspace}/js/shCore-ck.js"></script>
 				<link type="text/css" rel="stylesheet" href="{$workspace}/css/shCoreDefault.css"/>
 				<script type="text/javascript">
 				$(document).ready(function(){
