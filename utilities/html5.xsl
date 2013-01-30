@@ -41,7 +41,7 @@ xmlns:georss="http://www.georss.org/georss">
 				<xsl:comment><![CDATA[[if (gte IE 6)&(lte IE 8)]><script type="text/javascript" src="]]><xsl:value-of select="$root"/><![CDATA[/workspace/js/about_ie.js"></script><![endif]]]></xsl:comment>
 			</xsl:if>
 			
-			<script id="thejavascript" src="{$workspace}/js/sumnoise.js"></script>
+			<script id="thejavascript" src="{$workspace}/js/sumnoise-ck.js"></script>
 			
 			<!-- IE -->			
 			<xsl:comment><![CDATA[[if (gte IE 6)&(lte IE 8)]><script type="text/javascript" src="]]><xsl:value-of select="$root"/><![CDATA[/workspace/js/selectivizr-min.js"></script><![endif]]]></xsl:comment>

@@ -21,7 +21,7 @@ $(document).ready(function(){
 		    width = parseInt(width);
 		    if (width < 980) {
 		    	var theThinnerURL = workspaceURL + "/css/thinner.css";
-		        $("#size-stylesheet").attr("href", theURL);
+		        $("#size-stylesheet").attr("href", theThinnerURL);
 		    } else {
 		    	var theScreenURL = workspaceURL + "/css/screen.css";
 		       $("#size-stylesheet").attr("href", theScreenURL);
