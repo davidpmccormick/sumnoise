@@ -31,9 +31,9 @@ xmlns:georss="http://www.georss.org/georss">
 			<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 600px)" href="{$workspace}/css/handheld.css" /> <!-- CSS for phones -->
 			<link type="text/css" rel="stylesheet" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="{$workspace}/css/tablet.css" /> <!-- CSS for iPads -->
 			<link type="text/css" rel="stylesheet" media="(min-device-width: 601px) and (max-device-width: 1080px)" href="{$workspace}/css/tablet.css" /> <!-- CSS for tablets -->
-			
+			<script type="text/javascript" src="http://use.typekit.com/oty5wmg.js"></script>
+			<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-			<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 			<script src="{$workspace}/js/master-ck.js"></script>
 													
 	    <xsl:if test="$current-page-id = '2'"> <!-- only for 'about' page -->
@@ -48,8 +48,6 @@ xmlns:georss="http://www.georss.org/georss">
 			<xsl:comment><![CDATA[[if (gte IE 6)&(lte IE 8)]><script type="text/javascript" src="]]><xsl:value-of select="$root"/><![CDATA[/workspace/js/sumnoise_ie.js"></script><![endif]]]></xsl:comment>
 			<!-- end IE -->
 			
-			<script type="text/javascript" src="http://use.typekit.com/oty5wmg.js"></script>
-			<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 			<style type="text/css">
 			<!-- hide all text until webfonts have loaded (to prevent flash of unstyled text) -->
 			h1, h2, h3, h4, p, a, #tweets li {
